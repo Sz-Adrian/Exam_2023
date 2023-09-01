@@ -12,8 +12,12 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function(error) { if (error)  console.log(error); });
+/*
+let Usercontroller = require('./controllers/Usercontroller');
 
-
+router.get("/",Usercontroller.List);
+router.get("/",Usercontroller.List);
+*/
 router.get('/', (req, res) => {
     //res.send("Hiiiiiiiiiiiiiiiiii     iiiiiiiiiiiiiii <br /> Houlouuuuuuu");
     res.redirect('/user');

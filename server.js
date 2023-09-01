@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: true}));
 let routes = require('./routes');
 app.use('/', routes);
 
-app.listen(80, function () {
+app.listen(3000, function () {
     console.log('Example app listening on port 3000!');
 });
 
